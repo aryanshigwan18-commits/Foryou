@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #fff1f5, #fdecef);
+  font-family: 'Quicksand', sans-serif;
+  color: #4a4a4a;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 25px 18px 90px;
+}
+
+.card {
+  background: rgba(255,255,255,0.94);
+  border-radius: 22px;
+  padding: 24px;
+  margin-bottom: 40px;
+  box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.gif {
+  max-width: 260px;
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.text { line-height: 1.7; }
+.big-text { font-size: 1.8rem; color: #e63973; font-weight: 600; }
+.big-soft { font-size: 1.2rem; }
+
+.hidden { display: none; }
+
+/* 🌸 AESTHETIC PETAL */
+.petal-wrap { margin-top: 26px; cursor: pointer; }
+
+.petal {
+  width: 18px;
+  height: 28px;
+  background: linear-gradient(145deg,#ffd1dc,#f3a9c6);
+  border-radius: 100% 100% 60% 60%;
+  margin: auto;
+  filter: blur(0.2px);
+}
+
+.petal-text {
+  font-size: 0.85rem;
+  color: #b36b7a;
+  margin-top: 8px;
+}
+
+.fly { animation: petalFly 0.8s ease forwards; }
+
+@keyframes petalFly {
+  to { transform: translateY(-140px) rotate(20deg); opacity: 0; }
+}
+
+/* YES / NO */
+.choice-wrap { display: flex; gap: 18px; justify-content: center; margin-top: 22px; }
+
+.yes-btn {
+  background: #ff8fb1;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 25px;
+  color: white;
+}
+
+.no-btn {
+  background: #e0e0e0;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+}
+
+/* 🎆 Fireworks */
+#fireworks {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px);
+  z-index: 998;
+}
+
+.celebration-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  background: rgba(0,0,0,0.35);
+  padding: 20px 26px;
+  border-radius: 18px;
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  animation: pop 0.6s ease forwards;
+}
+
+@keyframes pop {
+  to { transform: translate(-50%, -50%) scale(1); }
+}

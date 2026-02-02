@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Mauu 💗</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="fireworks" class="hidden"></canvas>
+
+<div id="overlay" class="hidden"></div>
+
+<div class="container">
+
+  <!-- SECTION 1 -->
+  <section class="card fade">
+    <img class="gif" src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+    <p class="text">
+      <strong>Heyyy Mauu 🐱💗</strong><br><br>
+      I made something new…<br>
+      I hope avdel tula 😭<br><br>
+      Just scroll slowlyy 🐾✨
+    </p>
+
+    <div class="petal-wrap" onclick="petalNext(this,1)">
+      <div class="petal"></div>
+      <p class="petal-text">touch the petal</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="card fade">
+    <img class="gif" src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
+    <p class="text">
+      It’s been long…<br>
+      <strong>5 years of friendship 🧿</strong><br>
+      <strong>and 3 years of relationship 💗</strong><br><br>
+
+      Every meet, every moment felt special 🫂<br><br>
+      Thodishi bhandana, thodasa rusva–fugva…<br><br>
+      Which made our bond more strong 🫶🏻
+    </p>
+
+    <div class="petal-wrap" onclick="petalNext(this,2)">
+      <div class="petal"></div>
+      <p class="petal-text">touch the petal</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="card fade">
+    <img class="gif" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+    <p class="text">
+      It all started from <strong>your proposal</strong>…<br>
+      hats off to your confidence 😂💗<br><br>
+
+      Joke aside…<br>
+      <strong>I promise you won’t regret this ❤️</strong>
+    </p>
+
+    <div class="petal-wrap" onclick="petalNext(this,3)">
+      <div class="petal"></div>
+      <p class="petal-text">touch the petal</p>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="card fade center">
+    <p class="text big-soft">Even though you’re my GF…</p>
+
+    <p class="big-text">WILL YOU BE MY VALENTINE?? 🥹💗</p>
+
+    <div class="choice-wrap">
+      <button class="yes-btn" onclick="startCelebration()">Yes 🌸</button>
+      <button class="no-btn" onclick="softNo()">No</button>
+    </div>
+
+    <p id="noText" class="soft-text hidden">
+      That’s okay… I just wanted you to know how I feel 🤍
+    </p>
+  </section>
+
+</div>
+
+<div id="yesMessage" class="celebration-text hidden">
+  💗 You just made my heart celebrate 💗
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
